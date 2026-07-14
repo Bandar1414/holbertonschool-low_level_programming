@@ -1,6 +1,6 @@
 # Simple Calculator
 
-A simple terminal-based calculator written in C.
+A terminal-based interactive calculator written in C.
 
 ## Compilation
 
@@ -16,12 +16,15 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 calculator.c -o calculator
 - Subtraction
 - Multiplication
 - Division
-- Quit
 
 ## Numeric Behavior
 
-The program reads integer menu options using scanf.
+The calculator uses decimal numbers with the double data type.
+
+Whole-number results are displayed without unnecessary decimal zeros.
+Decimal results are displayed when needed.
 
 ## Known Limitations
 
-The mandatory version does not handle non-numeric input.
+The mandatory version does not handle non-numeric input safely.
+Division by zero is rejected.
